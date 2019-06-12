@@ -16,6 +16,7 @@ RUN dnf install -y --nodocs 'dnf-command(copr)' && \
 	dnf -y copr enable timn/openprs && \
 	dnf -y copr enable timn/clingo && \
 	dnf -y copr enable thofmann/plexil && \
+	dnf -y copr enable momosomium/tensorflow_c_api && \
 	dnf clean all
 
 # Install robotics related dependencies, be generous, skip docs
@@ -36,7 +37,7 @@ RUN dnf install -y --nodocs \
 	libjpeg-devel libpng-devel opencv-devel \
   orocos-kdl-devel orocos-bfl-devel \
 	libalvar-devel libusb-devel hokuyoaist-devel libdc1394-devel libkni3-devel \
-  librealsense1-devel \
+  librealsense1-devel libtensorflow_c-devel \
 	libudev-devel urg-devel libkindrv-devel \
 	festival festival-devel flite-devel \
 	urdfdom-headers-devel urdfdom-devel \
