@@ -65,5 +65,6 @@ RUN dnf install -y --nodocs \
 	compat-lua compat-lua-devel compat-tolua++-devel \
 	collada-dom-devel python-collada python-empy lz4-devel libuuid-devel \
 	screen \
+	&& dnf module install librealsense/dev \
 	&& dnf clean all
 
