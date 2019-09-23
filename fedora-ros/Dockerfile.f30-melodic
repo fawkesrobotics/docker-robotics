@@ -9,7 +9,7 @@ ENV ROS_DISTRO=melodic \
     ROS_SETUP_SH=/usr/lib64/ros/setup.sh
 
 RUN \
-  dnf -y copr enable thofmann/ros &&\
+  dnf -y copr enable thofmann/ros-testing &&\
   dnf -y install --nodocs \
     ros-$ROS_DISTRO-desktop_full ros-$ROS_DISTRO-desktop_full-devel \
     ros-$ROS_DISTRO-move_base_msgs ros-$ROS_DISTRO-move_base_msgs-devel \
