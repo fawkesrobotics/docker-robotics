@@ -8,13 +8,10 @@ RUN echo "deltarpm=0" >> /etc/dnf/dnf.conf && \
 	# Update and clean cache afterwards
 	dnf -y --nodocs update && dnf clean all
 
-# Enable COPR for PDDL planners, openprs, plexil
+# Enable COPR for libalvar, PDDL planners, plexil, and tensorflow
 RUN dnf install -y --nodocs 'dnf-command(copr)' && \
 	dnf -y copr enable thofmann/libalvar && \
 	dnf -y copr enable thofmann/planner && \
-	dnf -y copr enable thofmann/mongocxx-v3 && \
-	dnf -y copr enable timn/openprs && \
-	dnf -y copr enable timn/clingo && \
 	dnf -y copr enable thofmann/plexil && \
 	dnf -y copr enable momosomium/tensorflow_c_api && \
 	dnf clean all
@@ -45,7 +42,7 @@ RUN dnf install -y --nodocs \
 	gts-devel libccd-devel pcl-devel player-devel openni-devel \
 	protobuf-devel protobuf-compiler \
 	graphviz graphviz-devel rrdtool-devel \
-	mongo-cxx-driver-devel mongodb-server \
+	mongo-cxx-driver-devel \
 	assimp-devel freeimage-devel ogre-devel \
 	mesa-libGL-devel mesa-libGLU-devel freeglut-devel \
 	libXext-devel qt-devel PyQt4-devel fltk-devel \
@@ -53,14 +50,14 @@ RUN dnf install -y --nodocs \
 	cairomm gconfmm26-devel glibmm24-devel gtkmm30-devel \
 	gazebo-devel gazebo-ode-devel gazebo-media \
 	ros-release python-rospkg python3-rospkg console-bridge-devel \
-	rospack rospack-devel python-rosdistro python-rosinstall \
+	python-rosdistro python-rosinstall \
 	python-rosinstall_generator python-wstool python3-rosdep python-rosdistro \
   python3-rosinstall_generator python3-rosinstall \
   python-qt5-devel python3-qt5-devel python2-defusedxml \
   sip-devel PyQt4-devel \
 	python-netifaces \
 	clips clipsmm-devel clips-emacs \
-  openprs-devel plexil-devel plexil-compiler clingo-devel \
+  plexil-devel plexil-compiler clingo-devel \
   fast-downward fast-forward \
 	compat-lua compat-lua-devel compat-tolua++-devel \
 	collada-dom-devel python-collada python-empy lz4-devel libuuid-devel \
