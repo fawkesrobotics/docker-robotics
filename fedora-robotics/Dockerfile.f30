@@ -18,7 +18,9 @@ RUN dnf install -y --nodocs 'dnf-command(copr)' && \
 
 # Install robotics related dependencies, be generous, skip docs
 # Not in docker: ccache
-RUN dnf install -y --nodocs \
+# Exclude fedora-release:
+# https://fedoraproject.org/wiki/Common_F30_bugs#Conflicts_between_fedora-release_packages_when_installing_package_groups
+RUN dnf install -y --nodocs --excludepkg fedora-release \
   @buildsys-build @development-tools \
 	gcc-c++ git make cmake hostname \
 	doxygen asciidoc docbook-style-xsl texlive-dvips texlive-latex \
