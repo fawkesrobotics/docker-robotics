@@ -23,7 +23,7 @@ RUN dnf install -y --nodocs 'dnf-command(copr)' && \
 RUN dnf install -y --nodocs --excludepkg fedora-release \
   @buildsys-build @development-tools \
 	gcc-c++ git make cmake hostname \
-	doxygen asciidoc docbook-style-xsl texlive-dvips texlive-latex \
+	doxygen doxygen-latex asciidoc docbook-style-xsl \
 	kernel-headers elfutils-libelf-devel file-devel \
 	yaml-cpp-devel PyYAML tinyxml-devel tinyxml2-devel libxslt xmlrpc-c-devel \
 	libxml2-devel libxml++-devel python3-libxml2 apr-util-devel \
