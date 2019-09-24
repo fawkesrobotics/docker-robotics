@@ -1,4 +1,4 @@
-FROM fawkesrobotics/fedora-ros:f30-kinetic
+FROM fawkesrobotics/fedora-ros:f30-melodic
 
 # ROS_DISTRO set by fedora-ros layer
 
