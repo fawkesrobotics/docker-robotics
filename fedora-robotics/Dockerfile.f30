@@ -38,7 +38,7 @@ RUN dnf install -y --nodocs --excludepkg fedora-release \
 	libalvar-devel libusb-devel hokuyoaist-devel libdc1394-devel libkni3-devel \
   librealsense1-devel libtensorflow_c-devel \
 	libudev-devel urg-devel libkindrv-devel \
-	festival festival-devel flite-devel \
+	flite-devel \
 	urdfdom-headers-devel urdfdom-devel \
 	bullet-devel CGAL-devel eigen3-devel \
 	gts-devel libccd-devel pcl-devel player-devel openni-devel \
