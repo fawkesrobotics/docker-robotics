@@ -61,6 +61,7 @@ RUN dnf install -y --nodocs --excludepkg fedora-release \
 	python-netifaces \
 	clips clipsmm-devel clips-emacs \
   plexil-devel plexil-compiler clingo-devel \
+  gologpp-devel \
   fast-downward fast-forward \
 	compat-lua compat-lua-devel compat-tolua++-devel \
 	collada-dom-devel python-collada python-empy lz4-devel libuuid-devel \
