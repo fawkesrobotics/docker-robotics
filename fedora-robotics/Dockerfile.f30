@@ -10,6 +10,7 @@ RUN echo "deltarpm=0" >> /etc/dnf/dnf.conf && \
 
 # Enable COPR for libalvar, PDDL planners, plexil, and tensorflow
 RUN dnf install -y --nodocs 'dnf-command(copr)' && \
+	dnf -y copr enable thofmann/eclipse-clp-6 && \
 	dnf -y copr enable thofmann/gologpp && \
 	dnf -y copr enable thofmann/libalvar && \
 	dnf -y copr enable thofmann/planner && \
@@ -61,7 +62,7 @@ RUN dnf install -y --nodocs --excludepkg fedora-release \
 	python-netifaces \
 	clips clipsmm-devel clips-emacs \
   plexil-devel plexil-compiler clingo-devel \
-  gologpp-devel \
+  eclipse-clp-devel gologpp-devel \
   fast-downward fast-forward \
 	compat-lua compat-lua-devel compat-tolua++-devel \
 	collada-dom-devel python-collada python-empy lz4-devel libuuid-devel \
