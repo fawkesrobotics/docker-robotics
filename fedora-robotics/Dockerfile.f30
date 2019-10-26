@@ -70,5 +70,3 @@ RUN dnf install -y --nodocs --excludepkg fedora-release \
 	&& dnf module install -y librealsense/dev \
 	&& dnf clean all
 
-# For some reason, this is not run when installing texlive
-RUN texhash
