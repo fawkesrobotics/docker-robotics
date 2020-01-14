@@ -11,7 +11,7 @@ RUN echo "deltarpm=0" >> /etc/dnf/dnf.conf && \
 # Enable COPR for libalvar, PDDL planners, plexil, and tensorflow
 RUN dnf install -y --nodocs 'dnf-command(copr)' && \
 	dnf -y copr enable thofmann/eclipse-clp-6 && \
-	dnf -y copr enable thofmann/gologpp && \
+	dnf -y copr enable thofmann/gologpp-latest && \
 	dnf -y copr enable thofmann/libalvar && \
 	dnf -y copr enable thofmann/planner && \
 	dnf -y copr enable thofmann/plexil && \
