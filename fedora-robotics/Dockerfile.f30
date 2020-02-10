@@ -30,7 +30,7 @@ RUN dnf install -y --nodocs --excludepkg fedora-release \
 	yaml-cpp-devel PyYAML tinyxml-devel tinyxml2-devel libxslt xmlrpc-c-devel \
 	libxml2-devel libxml++-devel python3-libxml2 apr-util-devel \
 	boost-devel log4cxx-devel poco-devel readline-devel bzip2-devel \
-	gperftools-devel gtest-devel libtool-ltdl-devel sqlite-devel \
+	gperftools-devel gtest-devel catch-devel libtool-ltdl-devel sqlite-devel \
 	tbb-devel python-setuptools python2-numpy python2-pyopengl \
 	avahi-devel bluez-libs-devel libmicrohttpd-devel libdaemon-devel \
   npm rapidjson-devel ctemplate-devel websocketpp-devel \
