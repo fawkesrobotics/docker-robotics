@@ -42,7 +42,7 @@ RUN dnf install -y --nodocs dnf-plugin-ovl && \
 	  SDL-devel SDL_image-devel SDL_net-devel \
 	  cairomm gconfmm26-devel glibmm24-devel gtkmm30-devel \
 	  gazebo-devel gazebo-ode-devel gazebo-media \
-	  python-rospkg python3-rospkg console-bridge-devel \
+	  python2-rospkg python3-rospkg console-bridge-devel \
 	  python-rosdistro python3-rosinstall \
 	  python2-wstool python3-rosdep python-rosdistro \
     python3-rosinstall_generator python3-rosinstall \
