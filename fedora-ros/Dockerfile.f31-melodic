@@ -1,6 +1,7 @@
 FROM fawkesrobotics/fedora-robotics:f31
 
-ENV SHELL=/bin/bash \
+ENV ROS_DISTRO=melodic \
+    SHELL=/bin/bash \
 		ROS_BUILD_TYPE=Release \
 		ROSCONSOLE_STDOUT_LINE_BUFFERED=1 \
 		ROSCONSOLE_FORMAT='[${severity}] [${time}] ${node}: ${message}' \
