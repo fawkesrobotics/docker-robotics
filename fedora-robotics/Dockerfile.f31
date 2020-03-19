@@ -1,6 +1,7 @@
 FROM       fedora:31
 
-# Install dnf overlay plugin to avoid rpmdb errors on overlayfs
+COPY mongodb.repo /etc/yum.repos.d/
+
 RUN dnf install -y --nodocs dnf-plugin-ovl && \
   echo "deltarpm=0" >> /etc/dnf/dnf.conf && \
 	# Update and clean cache afterwards
@@ -35,7 +36,7 @@ RUN dnf install -y --nodocs dnf-plugin-ovl && \
 	  gts-devel libccd-devel pcl-devel player-devel openni-devel \
 	  protobuf-devel protobuf-compiler \
 	  graphviz graphviz-devel rrdtool-devel \
-	  mongo-cxx-driver-devel \
+	  mongo-cxx-driver-devel mongodb-org-server \
 	  assimp-devel freeimage-devel ogre-devel \
 	  mesa-libGL-devel mesa-libGLU-devel freeglut-devel \
 	  libXext-devel qt-devel PyQt4-devel fltk-devel \
