@@ -39,7 +39,7 @@ RUN dnf install -y --nodocs dnf-plugin-ovl && \
 	  mongo-cxx-driver-devel mongodb-org-server \
 	  assimp-devel freeimage-devel ogre-devel \
 	  mesa-libGL-devel mesa-libGLU-devel freeglut-devel \
-	  libXext-devel qt-devel PyQt4-devel fltk-devel \
+	  libXext-devel fltk-devel \
 	  SDL-devel SDL_image-devel SDL_net-devel \
 	  cairomm gconfmm26-devel glibmm24-devel gtkmm30-devel \
 	  gazebo-devel gazebo-ode-devel gazebo-media \
@@ -47,8 +47,8 @@ RUN dnf install -y --nodocs dnf-plugin-ovl && \
 	  python-rosdistro python3-rosinstall \
 	  python2-wstool python3-rosdep python-rosdistro \
     python3-rosinstall_generator python3-rosinstall \
-    python-qt5-devel python3-qt5-devel python3-defusedxml \
-    sip-devel PyQt4-devel \
+    python3-defusedxml \
+    sip-devel \
 	  python-netifaces \
 	  clips clipsmm-devel clips-emacs \
     plexil-devel plexil-compiler clingo-devel \
