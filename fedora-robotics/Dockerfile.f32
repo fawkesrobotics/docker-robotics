@@ -21,7 +21,7 @@ RUN dnf install -y --nodocs dnf-plugin-ovl && \
 	  libxml2-devel libxml++-devel python3-libxml2 apr-util-devel \
 	  boost-devel log4cxx-devel poco-devel readline-devel bzip2-devel \
 	  gperftools-devel gtest-devel catch-devel libtool-ltdl-devel sqlite-devel \
-	  tbb-devel python-setuptools python2-numpy python2-pyopengl \
+	  tbb-devel python-setuptools python3-numpy python3-pyopengl \
 	  avahi-devel bluez-libs-devel libmicrohttpd-devel libdaemon-devel \
     npm rapidjson-devel ctemplate-devel websocketpp-devel \
 	  openssl-devel libmodbus-devel \
@@ -43,9 +43,9 @@ RUN dnf install -y --nodocs dnf-plugin-ovl && \
 	  SDL-devel SDL_image-devel SDL_net-devel \
 	  cairomm gconfmm26-devel glibmm24-devel gtkmm30-devel \
 	  gazebo-devel gazebo-ode-devel gazebo-media \
-	  python2-rospkg python3-rospkg console-bridge-devel \
+	  python3-rospkg python3-rospkg console-bridge-devel \
 	  python-rosdistro python3-rosinstall \
-	  python2-wstool python3-rosdep python-rosdistro \
+	  python3-wstool python3-rosdep python-rosdistro \
     python3-rosinstall_generator python3-rosinstall \
     python3-defusedxml \
     sip-devel \
