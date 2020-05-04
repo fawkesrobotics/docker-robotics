@@ -17,7 +17,7 @@ RUN dnf install -y --nodocs dnf-plugin-ovl && \
 	  gcc-c++ git make cmake hostname \
 	  doxygen doxygen-latex asciidoc docbook-style-xsl \
 	  kernel-headers elfutils-libelf-devel file-devel \
-	  yaml-cpp-devel PyYAML tinyxml-devel tinyxml2-devel libxslt xmlrpc-c-devel \
+	  yaml-cpp-devel python3-pyyaml tinyxml-devel tinyxml2-devel libxslt xmlrpc-c-devel \
 	  libxml2-devel libxml++-devel python3-libxml2 apr-util-devel \
 	  boost-devel log4cxx-devel poco-devel readline-devel bzip2-devel \
 	  gperftools-devel gtest-devel catch-devel libtool-ltdl-devel sqlite-devel \
