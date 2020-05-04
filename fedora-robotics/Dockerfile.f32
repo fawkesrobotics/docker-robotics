@@ -48,7 +48,7 @@ RUN dnf install -y --nodocs dnf-plugin-ovl && \
 	  python3-wstool python3-rosdep python-rosdistro \
     python3-rosinstall_generator python3-rosinstall \
     python3-defusedxml \
-    sip-devel \
+    python3-sip-devel \
 	  python-netifaces \
 	  clips clipsmm-devel clips-emacs \
     plexil-devel plexil-compiler clingo-devel \
