@@ -53,7 +53,7 @@ RUN dnf install -y --nodocs dnf-plugin-ovl && \
 	  clips clipsmm-devel clips-emacs \
     plexil-devel plexil-compiler clingo-devel \
     eclipse-clp-devel gologpp-devel \
-    fast-downward fast-forward \
+    fast-forward \
 	  compat-lua compat-lua-devel compat-tolua++-devel \
 	  collada-dom-devel python-collada python-empy lz4-devel libuuid-devel \
 	  screen \
