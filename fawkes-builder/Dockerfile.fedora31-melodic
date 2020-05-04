@@ -25,7 +25,6 @@ RUN \
 # Install refbox, used for testing
 RUN \
   dnf -y --nodocs install 'dnf-command(copr)' && \
-  dnf -y copr enable thofmann/freeopcua && \
   dnf -y copr enable thofmann/rcll-refbox && \
   dnf -y --nodocs install rcll-refbox tmux && \
   dnf clean all
