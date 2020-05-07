@@ -26,7 +26,7 @@ RUN dnf install -y --nodocs dnf-plugin-ovl && \
 	  libjpeg-devel libpng-devel opencv-devel \
     orocos-kdl-devel orocos-bfl-devel \
 	  libusb-devel hokuyoaist-devel libdc1394-devel libkni3-devel \
-    librealsense1-devel \
+    librealsense-devel librealsense1-devel \
 	  libudev-devel urg-devel libkindrv-devel \
 	  flite-devel \
 	  urdfdom-headers-devel urdfdom-devel \
@@ -55,5 +55,4 @@ RUN dnf install -y --nodocs dnf-plugin-ovl && \
 	  compat-lua compat-lua-devel compat-tolua++-devel \
 	  collada-dom-devel python-collada python-empy lz4-devel libuuid-devel \
 	  screen \
-	&& dnf module install -y librealsense/dev \
 	&& dnf clean all
