@@ -9,7 +9,7 @@ ENV ROS_DISTRO=noetic \
     ROS_SETUP_SH=/usr/lib64/ros/setup.sh
 
 RUN \
-  dnf -y copr enable thofmann/ros-testing &&\
+  dnf -y copr enable thofmann/ros &&\
   dnf -y install --nodocs \
     ros-desktop_full ros-desktop_full-devel \
     ros-move_base_msgs ros-move_base_msgs-devel \
