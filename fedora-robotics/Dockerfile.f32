@@ -10,6 +10,7 @@ RUN dnf install -y --nodocs dnf-plugin-ovl && \
 	dnf -y copr enable thofmann/eclipse-clp-6 && \
 	dnf -y copr enable thofmann/gologpp-latest && \
 	dnf -y copr enable thofmann/planner && \
+	dnf -y copr enable thofmann/doxygen-1.8.18 && \
   dnf install -y --nodocs --excludepkg fedora-release \
     @buildsys-build @development-tools \
 	  gcc-c++ git make cmake hostname \
