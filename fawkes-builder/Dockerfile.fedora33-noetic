@@ -28,19 +28,3 @@ RUN \
   dnf -y copr enable thofmann/rcll-refbox && \
   dnf -y --nodocs install rcll-refbox tmux && \
   dnf clean all
-
-# These UID/GID must match the buildkite-agent UID/GID
-# This is typically created from our buildkite ansible role.
-RUN \
-  groupadd -g 1102 builder &&\
-  useradd -u 1102 -c "Builder" -m -d /home/builder -g builder -G ccache builder
-
-USER builder
-
-# Create npm dir to enable mounting a cache volume without permission
-# errors on the .npm dir itself (would be created owned by root otherwise).
-RUN mkdir -p /home/builder/.npm && chown builder:builder /home/builder/.npm
-
-#RUN mkdir -p /opt/fawkes-builder
-#COPY entrypoint /opt/fawkes-builder/entrypoint
-
