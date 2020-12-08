@@ -52,3 +52,4 @@ RUN \
 
 RUN mkdir -p /var/cache/ccache
 COPY ubuntu-profile-ccache.sh /etc/profile.d/ccache.sh
+COPY ccache.conf /etc/ccache.conf

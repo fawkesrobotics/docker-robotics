@@ -19,6 +19,8 @@ RUN \
   dnf -y --nodocs install ccache yamllint parallel clang procps-ng &&\
   dnf clean all
 
+COPY ccache.conf /etc/ccache.conf
+
 RUN \
 	pip3 --no-cache-dir install gitlint
 
