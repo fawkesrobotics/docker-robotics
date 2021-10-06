@@ -1,4 +1,4 @@
-FROM fawkesrobotics/fedora-ros:f33-noetic
+FROM quay.io/fawkesrobotics/fedora-ros:f33-noetic
 
 # ROS_DISTRO set by fedora-ros layer
 
