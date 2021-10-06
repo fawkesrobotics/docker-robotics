@@ -1,4 +1,4 @@
-FROM fawkesrobotics/fedora-robotics:f33
+FROM quay.io/fawkesrobotics/fedora-robotics:f33
 
 ENV ROS_DISTRO=noetic \
     SHELL=/bin/bash \
