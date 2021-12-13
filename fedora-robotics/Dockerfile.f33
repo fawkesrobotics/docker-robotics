@@ -54,7 +54,7 @@ RUN dnf install -y --nodocs dnf-plugin-ovl && \
     clingo-devel \
     eclipse-clp-devel gologpp-devel \
     pddl_parser-devel \
-    fast-forward \
+    fast-forward popf \
 	  compat-lua compat-lua-devel compat-tolua++-devel \
 	  collada-dom-devel python-collada python-empy lz4-devel libuuid-devel \
 	  screen \
