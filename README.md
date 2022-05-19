@@ -1,3 +1,7 @@
+⚠️ This repository is archived and no longer maintained.  ⚠️
+
+If you need a container image for CI builds, [fawkesrobotics/docker-fawkes-builder](https://github.com/fawkesrobotics/docker-fawkes-builder) may be useful instead.
+
 # Docker Images for Robotics
 This repository contains images related to Robotics development.
 
